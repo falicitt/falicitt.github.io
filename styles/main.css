@@ -1,0 +1,51 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 3/4;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  max-width: 100%;
+  margin: auto;
+}
+
+.four {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+
+
+/*.five {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.six {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.seven {
+  grid-column: 3;
+  grid-row: 5;
+}*/
