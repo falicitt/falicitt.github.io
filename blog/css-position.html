@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position</title>
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      color: white;
+    }
+
+    #static {
+      background-color: rgb(205, 123, 205);
+    }
+
+    #relative {
+      position: relative;
+      top: 50px;
+      left: 10px;
+      background-color: rgb(182, 78, 78);
+    }
+
+    #absolute {
+      position: absolute;
+      top: 750px;
+      right: 10px;
+      background-color: rgb(113, 201, 113);
+    }
+    
+    #fixed {
+      position: fixed;
+      top: 650px;
+      left: 10px;
+      background: rgb(87, 179, 202);
+    }
+    
+    .outer {
+      width: 500px;
+      height: 300px;
+      overflow: scroll;
+      padding-left: 150px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Position</h1>
+  <h2>What are the differences between relative, absolute, and fixed positioning?</h2>
+  <p>20 April 2022</p>
+
+  <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position</a> CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.
+  </p>
+  <ul>
+  <li>
+    <p class="divider">The element is positioned according to the normal flow of the document.</p>
+  <h3>static</h3>
+  <p>Default value. Elements render in order, as they appear in the document flow.</p>
+
+  <h3>relative</h3>
+  <p>The element is positioned relative to its normal position, and then offset relative to itself based on the values of top, right, bottom, and left. So "left:20px" adds 20 pixels to the element's LEFT position. The offset does not affect the position of any other elements.
+  </p>
+</li>
+
+  <li>
+    <p class="divider">The element is removed from the normal document flow, and no space is created for the element in the page layout.</p>
+  <h3>absolute</h3>
+  <p>The element is positioned relative to its first positioned (not static) ancestor element. 
+    other elements are positioned as if it did not exist. 
+    The element will scroll along with its container.
+  </p>
+
+  <h3>fixed</h3>
+  <p>Fixed positioning is similar to absolute positioning, with the exception that the element's containing block is the initial containing block established by the viewport(most of the time). 
+    The element is positioned relative to the browser window
+    (This means it's position is fixed on the viewport and it won't move along when the text or container scrolling up or down)
+  </p>
+  </li>
+
+</ul>
+
+<h4>Please check the example below. Notice how the relative box is scrolling with the text, the absolute box is scrowlling with the page, and the fixed box is fixed on the viewport.</h4>
+
+<div class="outer">
+  <div class="box" id="static">Static</div>
+  <div class="box" id="relative">Relative</div>
+  <div class="box" id="absolute">Absolute</div>
+  <div class="box" id="fixed">Fixed</div>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor eget pulvinar lobortis.
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ac dolor augue.
+    Pellentesque mi mi, laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit.
+    Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut arcu aliquam purus viverra dictum vel sit amet mi.
+    Duis nisl mauris, aliquam sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem aliquam, congue porttitor tortor.
+    Sed tempor nisl a lorem consequat, id maximus erat aliquet. Sed sagittis porta libero sed condimentum.
+    Aliquam finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id ultrices ultrices, tempor et tellus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor eget pulvinar lobortis.
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ac dolor augue.
+    Pellentesque mi mi, laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit.
+    Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut arcu aliquam purus viverra dictum vel sit amet mi.
+    Duis nisl mauris, aliquam sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem aliquam, congue porttitor tortor.
+    Sed tempor nisl a lorem consequat, id maximus erat aliquet. Sed sagittis porta libero sed condimentum.
+    Aliquam finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id ultrices ultrices, tempor et tellus.
+  </p>
+
+  
+  
+</div>
+  
+</body>
+</html>
