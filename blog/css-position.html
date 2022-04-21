@@ -14,7 +14,7 @@
     }
 
     #static {
-      background-color: rgb(205, 123, 205);
+      background-color: rgb(194, 174, 56);
     }
 
     #relative {
@@ -45,43 +45,52 @@
       padding-left: 150px;
     }
   </style>
+  <script src="https://kit.fontawesome.com/5eb3e0dcc8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>CSS Position</h1>
-  <h2>What are the differences between relative, absolute, and fixed positioning?</h2>
-  <p>20 April 2022</p>
+  <header>
+  <a href="/"><i class="fa-brands fa-y-combinator fa-2xl one"></i></a>
+  <div class="two">
+    <h1><a href="/">YAYUAN WANG</a></h1>
+    <p>WEB DEVELOPER || EARLYCHILDHOOD TEACHER</p> 
+  </div>
+</header>
+<main>
+  <h1>CSS Positioning</h2>
+  <h2>What are the differences between relative, absolute, and fixed positioning?</h3>
+  <p><em>posted on: 20 April 2022</em></p>
 
-  <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position</a> CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.
+  <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">POSITION</a> CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.
   </p>
   <ul>
-  <li>
-    <p class="divider">The element is positioned according to the normal flow of the document.</p>
-  <h3>static</h3>
-  <p>Default value. Elements render in order, as they appear in the document flow.</p>
+    <li>
+      <p class="divider">The element is positioned according to the normal flow of the document.</p>
+      <h3>static</h3>
+      <p>Default value. Elements render in order, as they appear in the document flow.</p>
 
-  <h3>relative</h3>
-  <p>The element is positioned relative to its normal position, and then offset relative to itself based on the values of top, right, bottom, and left. So "left:20px" adds 20 pixels to the element's LEFT position. The offset does not affect the position of any other elements.
-  </p>
-</li>
+      <h3>relative</h3>
+      <p>The element is positioned relative to its normal position, and then offset relative to itself based on the values of top, right, bottom, and left. So "left:20px" adds 20 pixels to the element's LEFT position. The offset does not affect the position of any other elements.
+      </p>
+    </li>
 
-  <li>
-    <p class="divider">The element is removed from the normal document flow, and no space is created for the element in the page layout.</p>
-  <h3>absolute</h3>
-  <p>The element is positioned relative to its first positioned (not static) ancestor element. 
-    other elements are positioned as if it did not exist. 
-    The element will scroll along with its container.
-  </p>
+    <li>
+      <p class="divider">The element is removed from the normal document flow, and no space is created for the element in the page layout.</p>
+      <h3>absolute</h3>
+      <p>The element is positioned relative to its first positioned (not static) ancestor element. 
+      other elements are positioned as if it did not exist. 
+       The element will scroll along with its container.
+      </p>
 
-  <h3>fixed</h3>
-  <p>Fixed positioning is similar to absolute positioning, with the exception that the element's containing block is the initial containing block established by the viewport(most of the time). 
-    The element is positioned relative to the browser window
-    (This means it's position is fixed on the viewport and it won't move along when the text or container scrolling up or down)
-  </p>
-  </li>
+      <h3>fixed</h3>
+      <p>Fixed positioning is similar to absolute positioning, with the exception that the element's containing block is the initial containing block established by the viewport(most of the time). 
+       The element is positioned relative to the browser window
+       (This means it's position is fixed on the viewport and it won't move along when the text or container scrolling up or down)
+       </p>
+    </li>
 
-</ul>
+  </ul>
 
-<h4>Please check the example below. Notice how the relative box is scrolling with the text, the absolute box is scrowlling with the page, and the fixed box is fixed on the viewport.</h4>
+<h2>Please check the example below. Notice how the relative box is scrolling with the text, the absolute box is scrowlling with the page, and the fixed box is fixed on the viewport.</h2>
 
 <div class="outer">
   <div class="box" id="static">Static</div>
@@ -106,10 +115,9 @@
     Sed tempor nisl a lorem consequat, id maximus erat aliquet. Sed sagittis porta libero sed condimentum.
     Aliquam finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id ultrices ultrices, tempor et tellus.
   </p>
-
-  
-  
 </div>
+</main>
+<a href="/" class="homelink">Go Home ></a>
   
 </body>
 </html>
