@@ -2,8 +2,9 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
+  /*font-weight: 300;*/
   box-sizing: border-box;
-  /*padding: 0; */
+ 
 }
 
 main {
@@ -28,12 +29,13 @@ h2 {
 
 h3 {
   font-family: 'Akshar', sans-serif;
-  padding-top: 2em;
+  /*padding-top: 2em;*/
 }
 
 h4 {
   color: rgb(151, 109, 130);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+
 }
 
 
@@ -78,9 +80,8 @@ h4 {
   
 }
 
-.blogposts {
+#blogposts {
   padding-left: 2.5rem;
-  
   font-size: 2rem;
   text-align: center;
 }
@@ -94,10 +95,8 @@ h4 {
 }
 
 .title {
-  width: 400px;
   /*padding: .5rem;*/
-  
-  font-size: 1.1rem;
+  width: 300px;
   text-align: center;
   text-transform: uppercase;
 }
