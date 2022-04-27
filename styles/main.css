@@ -19,13 +19,13 @@ h4 {
 
 .logo1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .logo2 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 100;
 }
 
@@ -40,25 +40,36 @@ p {
   font-size: 14px;
 }
 
+.image {
+  text-align: center;
+}
+
+.small {
+  font-family: 'Jesefin Sans', sans-serif;
+  font-size: .8rem;
+  color: gray;
+  font-weight: 100;
+  text-align: right;
+  padding-right: 5rem;
+}
+
 img {
   max-width: 100%;
 }
-
-/*style for index layout*/
 
 .wrapper {
   display: grid;
   grid-auto-columns: 1fr;
   gap: 10px;
-  grid-auto-rows: 110px;
+  grid-auto-rows: 115px;
   justify-items: center;
 }
 
 .one {
   grid-column: 1;
   grid-row: 1;
-  padding-top: 20px;
-  padding-right: 80px;
+  padding-top: 22px;
+  padding-right: 50px;
 }
 
 .two {
@@ -104,8 +115,12 @@ img {
 
 /*styles*/
 .date {
-  font-style: italic;
-  color: gray;
+  
+}
+
+.category {
+  display: inline-block;
+  border-bottom: solid 1px #ff00b8;
 }
 
 @media screen and (min-width: 880px) { 
