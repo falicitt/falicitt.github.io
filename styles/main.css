@@ -9,11 +9,16 @@ main {
   margin: auto;
 }
 
-h1, h2, h3 {
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+h2, h3 {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-h4 {
+h4, span {
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -35,13 +40,14 @@ a {
   font-family: 'DM Sans', sans-serif;
 }
 
-p {
+p, li {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
 }
 
 .image {
   text-align: center;
+  padding-top: 2rem;
 }
 
 .small {
@@ -59,26 +65,26 @@ img {
 
 .wrapper {
   display: grid;
-  grid-auto-columns: 1fr;
-  gap: 10px;
-  grid-auto-rows: 115px;
+  grid-auto-columns: 1fr 1fr;
+  gap: 20px;
+  grid-auto-rows: min-content;
   justify-items: center;
+  padding: 1rem 1rem;
 }
 
 .one {
-  grid-column: 1;
-  grid-row: 1;
-  padding-top: 22px;
-  padding-right: 50px;
+  position: fixed;
+  top: 28px;
+  left: 27px;
 }
 
 .two {
-  grid-column: 3;
-  grid-row: 1;
+  position: fixed;
+  top: 10px;
+  right: 10px;
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  font-family: 'DM Sans', sans-serif;
 }
 
 .two li {
@@ -86,32 +92,8 @@ img {
 }
 
 .three {
-  grid-column: 1/4;
-  grid-row: 2/6;
-  text-align: center;
-  padding-top: 5rem;
+  padding: 5rem 5rem; 
 }
-
-.four {
-  grid-column: 1;
-  grid-row: 6/10;
-}
-
-.five {
-  grid-column: 2;
-  grid-row: 6/9;
-}
-
-.six {
-  grid-column: 3;
-  grid-row: 6/9;
-}
-
-.seven {
-  grid-column: 1;
-  grid-row: 10/13;
-}
-
 
 /*styles*/
 .date {
@@ -123,8 +105,60 @@ img {
   border-bottom: solid 1px #ff00b8;
 }
 
+.ref {
+  color: gray;
+}
+
 @media screen and (min-width: 880px) { 
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .one {
+    position: static;
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 22px;
+    padding-right: 50px;
+  }
+  
+  .two {
+    grid-column: 3;
+    grid-row: 1;  
+    font-family: 'DM Sans', sans-serif;
+    position: static;
+  }
+  
+  .three {
+    grid-column: 1/4;
+    grid-row: 2/6;
+    text-align: center;
+    padding: 10rem 0;
+  }
+  
+  .four {
+    grid-column: 1;
+    grid-row: 6/10;
+  }
+  
+  .five {
+    grid-column: 2;
+    grid-row: 6/9;
+  }
+  
+  .six {
+    grid-column: 3;
+    grid-row: 6/9;
+  }
+  
+  .seven {
+    grid-column: 1;
+    grid-row: 10/13;
+  }
+  
+  .eight {
+    grid-column: 2;
+    grid-row: 10/13;
+  }
+  
 }
