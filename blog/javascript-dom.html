@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <style>
+    .code {
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Javascript Basics</h1>
+    <h2>Everything you need to know about JavaScript as my friend</h2>
+    <span class="date">01 May 2022  /  </span> <span class="category">TECH</span>
+    <div class="image">
+      <img src="/images/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="image of green leaf with white card" />
+    </div>
+    <div class="small">Photo by Helena Hertz</div>
+
+    <h3>JavaScript, HTML and CSS</h3>
+    <p>
+      HTML, CSS, and JavaScript are three programming languages that build up what you see in the browser.
+    </p>
+    <p>
+      HTML defines the structure of your web page and typically contains the content that you see. CSS is your primary styling language that allows you to give your HTML elements some much needed aesthetic and layout appeal.
+    </p>
+    <p>
+      JavaScript, on the other hand, is the magician that manipulates html and CSS.  It changes your websites from read-only to edible mode. It makes html and CSS come and go on the web page,  changes their appearance according to the need. With JavaScript you are able to interact with the web page. You can use your webpage to play media. You can get data, or input data into the web. You can play games, and do many more things.   
+    </p>
+    <h3>Control Flow and Loops</h3>
+    <p>
+      Control flow in JavaScript is how your computer runs code from top to bottom. It usually starts from the first line and ends at the last, unless it hits any statement that tells it to change the default order, such as loops, conditionals, or functions. 
+    </p>
+    <p>
+      Loops is one of the ways to interfere with the normal control flow. Just as its name suggested, a loop is a block of code that asks the computer to execute itself again and again until a stopping condition is met. The normal control flow is like when you do jogging on the street, and loop is when you run on the oval running track in a park. you're still running, but your absolute position on the earth is not changing much (always inside the park). It's not until when we finish this looping run and go outside the park that we continue to move on the street!
+    </p>
+    <h3>The DOM</h3>
+    <p>
+      What your browser displays is a web document. Under the covers, there is a hierarchical structure that the browser uses to make sense of everything going on. This structure is known as the Document Object Model (aka the DOM). The DOM is the single most important piece of functionality you have for working with your HTML documents. It provides the missing link that ties your HTML and CSS with JavaScript.
+    </p>
+    <p>
+      Below is a very simplified view of what the DOM might look like:
+    </p>
+    <div class="code">
+      <img src="/images/javascript/the dom.png" alt="sample image of the dom" />
+    </div>
+    <p>
+      In the browser, the root of your hierarchy is the window object. Some of the things you can do through the window object include accessing the current URL, getting information about any frames in the page, using local storage, seeing information about your screen, fiddling with the scrollbar, setting the status bar text, and all sorts of things that are applicable to the container your web page is displayed in.
+    </p>
+    <p>
+      Below it we get to the document object. It is the gateway to all the HTML elements that make up what gets shown. Any change you make to the DOM via JavaScript is reflected in what gets shown in the browser. You can dynamically add elements, remove them, move them around, modify attributes on them, set inline CSS styles, and perform all sorts of other shenanigans. In order to do these, we need to use the built-in functions querySelector and querySelectorAll to search through the DOM and select the element we want to use.
+    </p>
+    <div class="code">
+      <img src="/images/javascript/query.png" alt="sample image of the query selector" />
+    </div>
+    <p>
+      With the first example, what gets returned is the first div whose class value is "image".  While the querySelectorAll function returns an array with all the elements it finds that match the selector you provide.
+    </p>
+
+    <p>
+      Another import aspect of the document object has to do with events. If you want to react to a mouse click/hover, checking a checkbox, detecting when a key was pressed, and so on, you will be relying on functionality the document object provides for listening to and reacting to events.
+    </p>
+    <h3>Arrays and Objects</h3>
+    <p>
+      Both arrays and objects are useful data types in JavaScript. Arrays are a type of variable that is mutable and can be used to store a list of values. Objects represent a special data type that is also mutable and can be used to store a collection of data (rather than just a single value).  So when do you use which, and how to do work with each of them?
+    </p>
+    <p>
+      Arrays come with square brackets, with individual elements separated by commas. They can hold items of any data type. We use arrays whenever we want to create and store a list of multiple items in a single variable.  
+      Arrays are especially useful when creating ordered collections. Elements in the array are arranged by index values, starting at 0 as the first index. Therefore, they can be accessed by their index number:
+    </p>
+    <div class="code">
+      <img src="/images/javascript/array.png" alt="sample image of array" />
+    </div>
+    <p>
+      Items can be added and removed from the beginning or end of an array using the push(), pop(), unshift(), and shift() methods:
+    </p>
+    <div class="code">
+      <img src="/images/javascript/manipulate array.png" alt="sample image of manipulating array" />
+    </div>
+    <p>
+      Objects are used to represent a “thing” in your code. That could be a person, a car, a building, a book, a character in a game — basically anything that is made up or can be defined by a set of characteristics. In objects, these characteristics are called properties that consist of a key and a value. Its literal is enclosed with curly braces {}. All the keys are unique, but values are not. 
+    </p>
+    <p>
+      Unlike arrays, data inside objects are unordered. 
+    </p>
+    <p>
+      Properties in objects can be accessed, added, changed, and removed by using either dot or bracket notation. Nested properties of an object can be accessed by chaining key names in the correct order.
+    </p>
+    <div class="code">
+      <img src="/images/javascript/objects.png" alt="sample image of objects" />
+    </div>
+    <h3>Functions</h3>
+    <p>
+      Functions are one of the fundamental building blocks in JavaScript. At a very basic level, a function is nothing more than a wrapper for some code. A function basically:
+    </p>
+    <ol>
+      <li>
+        Groups statements together
+      </li>
+      <li>
+        Makes your code reusable
+      </li>
+    </ol>
+    <p>
+      For example, let's say we want to display the distance something has travelled:
+    </p>
+    <div class="code">
+      <img src="/images/javascript/function 1.png" alt="sample image of function 1" />
+    </div>
+    <p>
+      We have two variables named speed and time, and they each store a number. But what if we want to calculate the distance for more values? It could look like this:
+    </p>
+    <div class="code">
+      <img src="/images/javascript/function 2.png" alt="sample image of function 2" />
+    </div>
+    <p>
+      Or we could create a function and call it whenever is needed:
+    </p>
+    <div class="code">
+      <img src="/images/javascript/function 3.png" alt="sample image of function 3" />
+    </div>
+    <p>
+      In a word, repeated code makes our code harder to read and maintain, and it also wastes our time. Functions, on the other hand, can help us to make our code managable and reusable.
+    </p>
+    <a href="/" class="homelink">Go Home ></a>
+     
+</body>
+
+</html>
+
+
+
+
