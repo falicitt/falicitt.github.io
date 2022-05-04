@@ -59,6 +59,10 @@ p, li {
   padding-right: 5rem;
 }
 
+.code {
+  max-width: 400px;
+}
+
 img {
   max-width: 100%;
 }
@@ -141,7 +145,7 @@ img {
   
   .five {
     grid-column: 2;
-    grid-row: 6/10;
+    grid-row: 6/9;
   }
   
   .six {
@@ -151,12 +155,12 @@ img {
   
   .seven {
     grid-column: 1;
-    grid-row: 9/12;
+    grid-row: 9/13;
   }
   
   .eight {
     grid-column: 2;
-    grid-row: 10/13;
+    grid-row: 9/12;
   }
 
   .nine {
