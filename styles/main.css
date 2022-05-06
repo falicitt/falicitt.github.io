@@ -22,17 +22,6 @@ h4, span {
   font-family: 'DM Sans', sans-serif;
 }
 
-.logo1 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.logo2 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-}
 
 a {
   color: #060606;
@@ -40,11 +29,16 @@ a {
   font-family: 'DM Sans', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 p, li {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
 }
 
+/*styles for blog posts*/
 .image {
   text-align: center;
   padding-top: 2rem;
@@ -64,10 +58,11 @@ p, li {
   max-width: 400px;
 }
 
-img {
-  max-width: 100%;
+.ref {
+  color: gray;
 }
 
+/*styles for index page*/
 .wrapper {
   display: grid;
   grid-auto-columns: 1fr 1fr;
@@ -75,6 +70,18 @@ img {
   grid-auto-rows: min-content;
   justify-items: center;
   padding: 1rem 1rem;
+}
+
+.logo1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 .one {
@@ -97,21 +104,20 @@ img {
 }
 
 .three {
-  padding: 5rem 5rem; 
+  padding: 5rem; 
 }
 
-/*styles*/
-
+.titleImg:hover {
+  opacity: 0.5;
+}
 
 .category {
   display: inline-block;
   border-bottom: solid 1px #ff00b8;
 }
 
-.ref {
-  color: gray;
-}
 
+/*layout for desktop screen*/
 @media screen and (min-width: 880px) { 
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
