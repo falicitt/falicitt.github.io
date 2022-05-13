@@ -50,7 +50,6 @@ p, li {
   color: gray;
   font-weight: 100;
   text-align: right;
-  /*padding-right: 2rem;*/
   padding-bottom: 1rem;
 }
 
@@ -118,7 +117,7 @@ p, li {
 
 
 /*layout for desktop screen*/
-@media screen and (min-width: 880px) { 
+@media screen and (min-width: 870px) { 
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
