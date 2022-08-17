@@ -38,6 +38,21 @@ p, li {
   font-size: 14px;
 }
 
+
+/*about page*/
+.myphoto {
+  width: 400px
+}
+
+.image_container {
+  text-align: center;
+}
+
+.about {
+  margin-top: 9rem;
+  padding: 1rem 1rem;
+}
+
 /*styles for blog posts*/
 .image {
   text-align: center;
@@ -184,4 +199,15 @@ p, li {
     grid-row: 13/16;
   }
   
+}
+
+/* styles for portfolio page */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portfolioImg {
+  max-width: 600px;
 }
