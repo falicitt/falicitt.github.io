@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="application/javascript" src="https://kit.fontawesome.com/64beb3d505.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="styles/main.css" rel="stylesheet" type="text/css">
   <title>Cassie Wang</title>
 </head>
@@ -12,19 +14,30 @@
   
     <div class="one"><span class="logo1">Cassie</span><span class="logo2">WANG</span></div>
 
-    <ul class="two">
-      <li>
-        <a href="/">Projects</a>
-      </li> 
-      <!-- <li>
-        Portfolio
-      </li>  -->
-      <li>
-        <a href="./blog.html">Blog</a>
-      </li>
-      <li>
-        <a  href='./about.html'>About</a>
-      </li>
+      <ul class="two nav-desktop">
+        <li  class="w3-hide-small">
+          <a href="/">Projects</a>
+        </li> 
+        <!-- <li>
+          Portfolio
+        </li>  -->
+        <li>
+          <a href="./blog.html" class="w3-hide-small">Blog</a>
+        </li>
+        <li>
+          <a  href='./about.html' class="w3-hide-small">About</a>
+        </li>
+      </ul>
+      <a class="two toggle-menu nav-menu w3-hide-medium w3-hide-large w3-right" onclick="toggleList()" title="Toggle Navigation Menu">
+        <i class="fas fa-align-justify"></i>
+      </a> 
+    
+
+    <!-- Navbar on small screens -->
+    <ul id="navMobile" class="nav-mobile w3-hide-large w3-hide-medium">
+      <li><a href="index.html" onclick="myFunction()">Projects</a></li>
+      <li><a href="#" onclick="myFunction()">Blog</a></li>
+      <li><a href="contact.html" onclick="myFunction()">About</a></li>
     </ul>
   
     <!-- <div class="three">
@@ -58,4 +71,17 @@
   </div>
   
 </body>
+<script>
+  /*function to toggle menu on small screens*/
+  const Menu = document.querySelector('.toggle-menu');
+  const list = document.querySelector('#navMobile');
+  Menu.onclick = toggleList;
+  function toggleList() {     
+    if (list.style.display == 'none') {
+        list.style.display = 'block';
+    } else {
+        list.style.display = 'none';
+    }
+  }
+</script>
 </html>

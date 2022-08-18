@@ -38,6 +38,24 @@ p, li {
   font-size: 14px;
 }
 
+/* styles for nav bar */
+.nav-menu {
+  padding: 1.5rem 1rem;
+}
+
+.nav-mobile {
+  width: 100%;
+  position: relative;
+  top: 40px;
+  right: 10px;
+  list-style: none;
+  display: none;
+}
+
+.nav-mobile li {
+  padding: 5px;
+  text-align: center;
+}
 
 /*about page*/
 .myphoto {
@@ -211,6 +229,7 @@ p, li {
 
 .project {
   max-width: 480px;
+  padding: 10px;
 }
 
 .code {
