@@ -41,7 +41,7 @@ p, li {
 
 /*about page*/
 .myphoto {
-  width: 400px
+  max-width: 80%;
 }
 
 .image_container {
@@ -221,4 +221,5 @@ p, li {
 .projectImg {
   max-width: 600px;
   margin: auto;
+  text-align: center;
 }
