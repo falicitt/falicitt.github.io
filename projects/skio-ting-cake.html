@@ -4,9 +4,111 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <title>Skio Ting Cake | Cassie Wang</title>
 </head>
 <body>
+  <div class="wrapper">
   
+    <div class="one"><span class="logo1">Cassie</span><span class="logo2">WANG</span></div>
+
+    <ul class="two">
+      <li>
+        <a href="/">Portfolio</a>
+      </li> 
+      <!-- <li>
+        Portfolio
+      </li>  -->
+      <li>
+        <a href="../blog.html">Blog</a>
+      </li>
+      <li>
+        <a  href='../about.html'>About</a>
+      </li>
+    </ul>
+  </div>
+  <main>
+  <h1>Skio Ting Cake</h1>
+  <div  class="projectImg">
+    <img src="/images/skio-ting-cake.png" alt="skio ting cake website mockup" />
+  </div>
+  <h2>Introduction</h2>
+  <p>
+    A friend of mine has a small business of making birthday cakes. She currently uses WeChat as her business marketing and operating tool, which means she creates posts on the friends' circle, and people who are friends with her on wechat can contact her if they would like to order a cake. </p>
+    <p>The problem of using WeChat as the solely business tool is that there is no product catalogue with all available products for customers to browse through. Customers must ask owner basic questions such as what’s available for the day, and what’s the price of each cake. They also have to wait for owner’s response before making an order. More often that not it can take longer than it should. As for the business owner, Skio Ting, who also does customer service, it requires lots of effort and energy to answer repeated customer enquiries every day, which can adversely occupy her time from making cakes. </p>
+    <p>Another problem is that WeChat is mainly used among People who speak Chinese, and it’s hard for the business to reach the majority of people living in Wellington who speak English. </p>
+    <p>A successfully solution would be to create an English website listing all available products for customers to see with an online ordering system.
+  </p>
+  
+  <h2>Project Objective</h2>
+  <p>
+    To provide a way for customers from different cultural backgrounds to easily access the product information and product catalogue, and to make orders online; for the client to grow and maintain a relatively steady and sustainable business in receiving orders from customers around wellington.
+  </p>
+  <img src="/images/skiotingcake-sitemap.png" alt="skio ting cake sitemap" />
+  <div class="small">Skio Ting Cake Sitemap</div>
+  
+  <h2>Requirements</h2>
+  <h3>Functional Requirements</h3>
+  <ul>
+    <li>User story 1:
+      As a customer, I want to be able to view product catalogue and detailed information on the website.
+    </li>
+    <li>
+      User story 2:
+As a customer, I want to be able to make orders online at any time.
+    </li>
+  </ul>
+  <h3>Non-functional Requirements</h3>
+  <ol>
+    <li>Security: It should be secure using appropriate security techniques.</li>
+    <li>Availability: It should be available for access 24/7 with authentication requirements.</li>
+    <li>Reliability: It should have excellent data integrity to protect personal details.</li>
+    <li>Usability: It should be compatible with all device types, including desk top computer, tablet, cell phones, etc.</li>
+    <li>Scalability: It should be scalable in order to have the ability to grow to handle more work.</li>
+  </ol>
+   <h2>Methodology</h2>
+   <h3>Technology Research</h3>
+   <p>
+      The shopping cart function is one major issue I need to tackle in order to fulfill the business requirements. It will need a database to store data and build the API, along with using frontend frameworks to build the interface and manage global data, so that users can perform tasks like adding a product to the shopping cart, and calculate the total payment amount.
+    </p>
+    <p>
+      During the research I studied two CMS systems, Django and Strapi. With either system I should be able to create a dynamic and interactive website with the functions and database system provided. Django is a free python web framework. It requires plenty of reading and research on its documentation to set up and get started. Although once everything is set up it’s fairly straight forward to use. Strapi is an open-source CMS written in JavaScript. I find it easier to set up and get started with. After trying out both I decided to use Strapi because it is written in JavaScript which is more familiar to me. 
+    </p>
+   <h3>Stack Used</h3>
+   <p>
+    Strapi was used to build the backend API, with its default database SQLite. The frontend JavaScript framework is Next.js. I added Redux to manage global data state in order to achieve the shopping cart functionality. I also incorporated NextAuth in Next.js to implement user authentication.
+   </p>
+   <h2>Result</h2>
+   <h3>Release 1</h3>
+   <span>20/05/2022 </span>
+    <p>A detailed, customized E-commerce website framework was developed. More functionalities, such as user authentication, and an online payment system, will need to be carefully considered and implemented.</p>
+   
+   <div>
+      <p class="code"><a  href='https://skio-ting-cake.vercel.app/' target="_blank" rel="noopener noreferrer">View Demo</a></p>
+      <p class="code"><a href='https://github.com/falicitt/Skio-Ting-Cake-Next' target="_blank" rel="noopener noreferrer">SOURCE CODE (Frontend)</a></p>
+      <p class="category"><a href='https://github.com/falicitt/Skio-Ting-Cake-Strapi' target="_blank" rel="noopener noreferrer">SOURCE CODE (Backend)</a></p>
+  </div>
+  <h3>Release 2</h3>
+  <span>18/08/2022  </span>
+  <p>
+    A new and improved version of Skio Ting Cake rewritten in React and Node.js for more functionalities and faster loading speed. The loading speed has been significantly improved due to both front-end and back-end being incorporated into one server.
+
+  </p>
+  <p>
+    New features:
+  </p>
+  <ul> 
+    <li>Show only featured cakes on the home page.</li>
+    <li>Users are able to partially search for cakes</li>
+    <li>Sort cakes in alphabetic order</li>
+    <li>View placed orders on their profile page.</li>
+
+  </ul>
+  
+  <div>
+      <p class="code"><a  href='https://skiotingcakes.herokuapp.com' target="_blank" rel="noopener noreferrer">View Demo</a></p>
+      <p class="code"><a href='https://github.com/falicitt/Skio-Ting-Cake' target="_blank" rel="noopener noreferrer">SOURCE CODE</a></p>
+  </div>
+</main>
 </body>
 </html>

@@ -209,5 +209,16 @@ p, li {
 }
 
 .portfolioImg {
+  max-width: 500px;
+}
+
+.code {
+  border-bottom: solid 1px #ff00b8;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.projectImg {
   max-width: 600px;
+  margin: auto;
 }
