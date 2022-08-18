@@ -7,6 +7,7 @@
 main {
   max-width: 50rem;
   margin: auto;
+  padding: 0 10px;
 }
 
 h1 {
@@ -27,6 +28,10 @@ a {
   color: #060606;
   text-decoration: none;
   font-family: 'DM Sans', sans-serif;
+}
+
+a:hover {
+  color: #ff00b8;  
 }
 
 img {
@@ -53,8 +58,19 @@ p, li {
 }
 
 .nav-mobile li {
+  font-size: 1.1rem;
   padding: 5px;
   text-align: center;
+}
+
+.page-title {
+  padding-top: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.project-title {
+  padding-top: 30px;
 }
 
 /*about page*/
