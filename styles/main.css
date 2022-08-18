@@ -206,10 +206,11 @@ p, li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 1rem;
 }
 
-.portfolioImg {
-  max-width: 500px;
+.project {
+  max-width: 480px;
 }
 
 .code {
