@@ -118,7 +118,7 @@ p, li {
   gap: 20px;
   grid-auto-rows: min-content;
   justify-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem 4rem;
 }
 
 .logo1 {
@@ -156,9 +156,13 @@ p, li {
   padding: 5rem; 
 }
 
-.titleImg:hover {
+/* .titleImg:hover {
   opacity: 0.5;
-}
+} */
+
+/* .wrapper div a {
+  color: #060606;
+} */
 
 .category {
   display: inline-block;
@@ -265,6 +269,7 @@ p, li {
   margin: auto;
   text-align: center;
 }
+
 
 /* footer styles */
 footer {
