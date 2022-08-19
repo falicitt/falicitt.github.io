@@ -13,16 +13,17 @@ main {
 h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 h2, h3 {
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
 }
 
 h4, span {
   font-family: 'DM Sans', sans-serif;
 }
-
 
 a {
   color: #060606;
@@ -192,6 +193,11 @@ p, li {
     text-align: center;
     padding: 10rem 0;
   }
+
+  .blog {
+    grid-column: 1/4;
+    grid-row: 2/6;
+  }
   
   .four {
     grid-column: 1;
@@ -258,4 +264,20 @@ p, li {
   max-width: 600px;
   margin: auto;
   text-align: center;
+}
+
+/* footer styles */
+footer {
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+footer ul li {
+ padding: 0 10px;
 }
